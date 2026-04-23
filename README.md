@@ -2,7 +2,7 @@
 
 ## Editing
 
-Edit the `CLAUDE.md` directly, and commit directly in `main`.
+Edit the `CLAUDE.dsci.md` directly, and commit directly in `main`.
 
 ## Syncing
 
@@ -22,4 +22,4 @@ This will then grab the most recent version of this config file everytime you op
 @~/.claude/CLAUDE.dsci.md
 ```
 
-This will import the team `CLAUDE.dsci.md` config. 
+This will import the team `CLAUDE.dsci.md` config.
