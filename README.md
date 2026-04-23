@@ -14,7 +14,7 @@ To keep this file synced on your machine:
 curl -s https://raw.githubusercontent.com/OCHA-DAP/ds-claude-config/main/CLAUDE.dsci.md > ~/.claude/CLAUDE.dsci.md
 ```
 
-This will then grab the most recent version of this config file everytime you open a new terminal.
+This will then grab the most recent version of this config file everytime you open a new terminal. Or, simply run the command in the terminal to sync manually.
 
 2. Make sure you have the following line in your personal `~/.claude/CLAUDE.md` file:
 
