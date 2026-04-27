@@ -13,6 +13,8 @@ df_example = stratus.load_parquet_from_blob(blob_name)
 
 Check the stratus docs/README for current auth and init patterns — don't guess.
 
+In general, rasters are loaded from the blob, and raster stats (per administrative division) are loaded from the DB using `stratus.get_engine()`.
+
 ### Blob storage naming
 Follow this convention for all storage paths:
 ```
@@ -60,7 +62,17 @@ This is a guide not a rule — check the project's actual structure before assum
 `PROJECT_PREFIX` should always come from `src.constants`, never hardcoded inline.
 
 ## Data sources
-TBD
+
+For the following datasets, the rasters are on the blob and the raster stats are in the DB (to be loaded with `ocha-stratus`):
+- ERA5 (precipitation only)
+- SEAS5 (precipitation only)
+- IMERG
+- Floodscan
+
+### Administrative boundaries
+If there is not already a function in a repository to load a CODAB (from the blob), then boundaries should loaded from FieldMaps via `ocha-stratus`.
+
+If only metadata like admin name, code, and total area are needed, this should be loaded from the DB `public.polygons` table (via `ocha-stratus`). However this is only available for certain countries.
 
 ## Documentation
 TBD
