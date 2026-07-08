@@ -76,3 +76,23 @@ If only metadata like admin name, code, and total area are needed, this should b
 
 ## Documentation
 TBD
+
+## Team knowledge base
+
+The DS team knowledge base is `OCHA-DAP/ds-knowledge-base` (clone to `~/OCHA/repos/ds-knowledge-base`;
+one-command setup incl. MCP connectors: see its `docs/USING.md`). It is the shared home for our
+methods, past frameworks, pipeline runbooks, and infra conventions.
+
+- Before answering team-knowledge questions (how a framework/trigger works, what feeds a
+  pipeline, blob/DB conventions, past project decisions), **search the KB first** — grep/read
+  the local clone or use the `ds-kb` MCP tools — rather than answering from memory.
+- It's organized as `frameworks/`, `pipelines/`, `apps/`, `analysis/`, `methods/`,
+  `infrastructure/`, `assets/`. Read the specific page you need; follow each page's
+  `code_ref`/`source_repo` down into the actual repo for depth. Internal-sourced material
+  (Drive extracts, the HDX style-reference mirror) is in `ds-knowledge-base-internal`.
+- **Styling anything** (apps, dashboards, dataviz): start from the HDX v2 design system —
+  `methods/style-guide.md` in the KB, tokens/components mirror in the internal repo.
+- After completing framework or pipeline work, update the affected KB page
+  (capture-as-you-go). The repo's own CLAUDE.md first, the KB summary second.
+- To change the KB (or if a lookup turns up something missing/stale): open an issue on
+  `OCHA-DAP/ds-knowledge-base` — the steward drafts the fix as a PR for human review.
