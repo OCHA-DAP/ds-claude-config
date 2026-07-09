@@ -1,7 +1,7 @@
 # ⚠️ Superseded — moved into the team knowledge base
 
 This repo's `CLAUDE.dsci.md` is **replaced by
-[`ds-knowledge-base/claude/CLAUDE.dsci.md`](https://github.com/OCHA-DAP/ds-knowledge-base/blob/main/claude/CLAUDE.dsci.md)**,
+[`ds-knowledge-base/claude/CLAUDE.team.md`](https://github.com/OCHA-DAP/ds-knowledge-base/blob/main/claude/CLAUDE.team.md)**,
 which every team machine loads directly from its auto-syncing KB clone (one `@import`
 line — no copies, no drift). Team skills (`ds-team:*`) ship the same way.
 
