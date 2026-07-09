@@ -1,25 +1,17 @@
-# Claude config for Data Science team
+# ⚠️ Superseded — moved into the team knowledge base
 
-## Editing
+This repo's `CLAUDE.dsci.md` is **replaced by
+[`ds-knowledge-base/claude/CLAUDE.dsci.md`](https://github.com/OCHA-DAP/ds-knowledge-base/blob/main/claude/CLAUDE.dsci.md)**,
+which every team machine loads directly from its auto-syncing KB clone (one `@import`
+line — no copies, no drift). Team skills (`ds-team:*`) ship the same way.
 
-Edit the `CLAUDE.dsci.md` directly, and commit directly in `main`.
+**Set up / migrate in one command** (also removes this repo's legacy config from your
+machine automatically):
 
-## Syncing
-
-To keep this file synced on your machine:
-
-1. Add this to your `~/.zshrc`:
-
-```
-curl -s https://raw.githubusercontent.com/OCHA-DAP/ds-claude-config/main/CLAUDE.dsci.md > ~/.claude/CLAUDE.dsci.md
-```
-
-This will then grab the most recent version of this config file everytime you open a new terminal. Or, simply run the command in the terminal to sync manually.
-
-2. Make sure you have the following line in your personal `~/.claude/CLAUDE.md` file:
-
-```
-@~/.claude/CLAUDE.dsci.md
+```bash
+bash <(gh api repos/OCHA-DAP/ds-knowledge-base/contents/scripts/setup_team_claude.sh \
+       -H "Accept: application/vnd.github.raw")
 ```
 
-This will import the team `CLAUDE.dsci.md` config.
+Docs: [ds-knowledge-base/docs/USING.md](https://github.com/OCHA-DAP/ds-knowledge-base/blob/main/docs/USING.md).
+This repo is kept read-only for history.
